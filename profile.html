@@ -1,0 +1,272 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Elzero | Alaa Eldeyn</title>
+    <!--Render all Elements normally-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Main style file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--My framework file-->
+    <link rel="stylesheet" href="css/framework.css">
+    <!--profile style file-->
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header class="main-padding f-centering">
+        <div class="container">
+            <div class="search-box border-r f-centering">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="search" placeholder="Search">
+            </div>
+            <div class="profile ">
+                <i class="fa-regular fa-bell"></i>
+                <div class="avatar-img">
+                    <img class="img-control" src="imgs/avatar.png" alt="avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <div class="logo">Alaa Eldeyn</div>
+            <div class="pages">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-regular fa-chart-bar"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="hov-active">
+                        <a href="profile.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="project.html">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="friends.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="files.html">
+                            <i class="fa-regular fa-file"></i>
+                            <span>Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plans.html">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projectsTable.html">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Projects Table</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="dashboard">
+            <h1>Profile</h1>
+            <div class="container">
+                <div class="profile-one bg-white border-r main-padding">
+                    <div class="prof-card f-centering">
+                        <div class="prof-img">
+                            <img class="fit-img circle" src="imgs/avatar.png" alt="Avatar">
+                        </div>
+                        <h3>Alaa Elzero</h3>
+                        <p class="level">Level 19</p>
+                        <div class="progress"></div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="rate">550 Rating</p>
+                    </div>
+                    <div class="prof-details">
+                        <div class="row">
+                            <p>General information</p>
+                            <div class="prof-line">
+                                <p>Full name <span>Alaa Eldeyn</span></p>
+                                <p>Gender: <span>Male</span></p>
+                                <p>Country: <span>Egypt</span></p>
+                                <label class="myToggle" for="toggle1">
+                                    <input class="toggle-field" type="checkbox"id="toggle1" checked>
+                                    <div class="activation"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p>Personal information</p>
+                            <div class="prof-line">
+                                <p>Email: <span>o@nn.sa</span></p>
+                                <p>Phone: <span>01010385495</span></p>
+                                <p>Date of birth: <span>15/7/2003</span></p>
+                                <label class="myToggle" for="toggle2">
+                                    <input class="toggle-field" type="checkbox"id="toggle2" checked>
+                                    <div class="activation"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p>Job information</p>
+                            <div class="prof-line">
+                                <p>Title: <span>Full stack developer</span></p>
+                                <p>Programming language: <span>JavaScript</span></p>
+                                <p>Years of Experience: <span>+1</span></p>
+                                <label class="myToggle" for="toggle3">
+                                    <input class="toggle-field" type="checkbox"id="toggle3" checked>
+                                    <div class="activation"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p>Billing information</p>
+                            <div class="prof-line">
+                                <p>Payment method: <span>Paypal</span></p>
+                                <p>Email: <span>email@website.com</span></p>
+                                <p>Subscription: <span>Monthly</span></p>
+                                <label class="myToggle" for="toggle4">
+                                    <input class="toggle-field" type="checkbox"id="toggle4" checked>
+                                    <div class="activation"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySkills bg-white border-r main-padding">
+                    <h2>My Skills</h2>
+                    <p>Complete skills list</p>
+                    <div class="skill-row">
+                        <p class="sk btn">HTML</p>
+                        <p class="sk btn">Pugjs</p>
+                        <p class="sk btn">HAML</p>
+                    </div>
+                    <div class="skill-row">
+                        <p class="sk btn">CSS</p>
+                        <p class="sk btn">SASS</p>
+                        <p class="sk btn">Stylus</p>
+                    </div>
+                    <div class="skill-row">
+                        <p class="sk btn">JavaScript</p>
+                        <p class="sk btn">TypeScript</p>
+                    </div>
+                    <div class="skill-row">
+                        <p class="sk btn">Vuejs</p>
+                        <p class="sk btn">Reactjs</p>
+                    </div>
+                    <div class="skill-row">
+                        <p class="sk btn">Jest</p>
+                        <p class="sk btn">Jasmine</p>
+                    </div>
+                    <div class="skill-row">
+                        <p class="sk btn">PHP</p>
+                        <p class="sk btn">Laravel</p>
+                    </div>
+                    <div class="skill-row">
+                        <p class="sk btn">Python</p>
+                        <p class="sk btn">Django</p>
+                    </div>
+                </div>
+                <div class="activity bg-white border-r main-padding">
+                    <h2>Latest Activities</h2>
+                    <p>Latest activities done by the user</p>
+                    <div class="act-row">
+                        <div class="act-img">
+                            <img class="fit-img" src="imgs/activity-01.png" alt="activity">
+                        </div>
+                        <div class="act-info">
+                            <div class="a1">
+                                <p>Store</p>
+                                <p>18:10</p>
+                            </div>
+                            <div class="a2">
+                                <p class="p14">Bought the mastering python course</p>
+                                <p class="p14">Yesterday</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="act-row">
+                        <div class="act-img">
+                            <img class="fit-img" src="imgs/activity-02.png" alt="activity">
+                        </div>
+                        <div class="act-info">
+                            <div class="a1">
+                                <p>Academy</p>
+                                <p>16:05</p>
+                            </div>
+                            <div class="a2">
+                                <p class="p14">Got the PHP certificate</p>
+                                <p class="p14">Yesterday</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="act-row">
+                        <div class="act-img">
+                            <img class="fit-img" src="imgs/activity-03.png" alt="activity">
+                        </div>
+                        <div class="act-info">
+                            <div class="a1">
+                                <p>Badge</p>
+                                <p>18:05</p>
+                            </div>
+                            <div class="a2">
+                                <p class="p14">Unlocked the 10 skills badge</p>
+                                <p class="p14">Yesterday</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="act-row">
+                        <div class="act-img">
+                            <img class="fit-img" src="imgs/activity-01.png" alt="activity">
+                        </div>
+                        <div class="act-info">
+                            <div class="a1">
+                                <p>Store</p>
+                                <p>12:05</p>
+                            </div>
+                            <div class="a2">
+                                <p class="p14">Bought the typescript course</p>
+                                <p class="p14">Yesterday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

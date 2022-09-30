@@ -1,0 +1,65 @@
+/* --- Start courses page --- */
+
+.dashboard .container{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: auto;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.course-card{
+    position: relative;
+}
+.course-card .course-avatar{
+    position: absolute;
+    width: 46px;
+    border: 4px solid white;
+    top: .5rem;
+    left: .5rem;
+}
+.course-card .course-img img{
+    border-radius: 10px 10px 0 0;
+}
+.course-card .text .para{
+    height: 95px;
+}
+.course-card .text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.course-card .text h4{
+    font-weight: 400;
+    font-size: .85rem;
+}
+.course-card .text .p-text{
+    padding: .5rem 0 1rem;
+    color: gray;
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+.course-card .center-btn{
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    padding-bottom: .4rem;
+}
+.course-card .text .btn::before{
+    content: '';
+    position: absolute;
+    height: .5px;
+    width: 100%;
+    bottom: 45px;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--second-bg);
+    z-index: -1;
+}
+.course-card .text .course-details{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: .75rem;
+}
+
+/* --- End courses page --- */

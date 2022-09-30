@@ -1,0 +1,100 @@
+/* --- Start Projects page --- */
+
+.dashboard .container{
+    grid-template-rows: repeat(auto-fit, 200px);
+}
+.project-card{
+    position: relative;
+}
+.project-card::after{
+    content: "15/06/2022";
+    position: absolute;
+    top: .6rem;
+    right: .6rem;
+    color: gray;
+    font-size: .7rem;
+}
+.project-card:first-child::after{
+    content: "15/10/2021";
+}
+.project-card h2 {
+    font-size: .9rem;
+}
+.project-card h2 + p{
+    font-weight: 300;
+    font-size: .75rem;
+    margin-top: .5rem;
+}
+.project-card .project-image{
+    display: flex;
+    width: 30px;
+    margin: 1.5rem 0 .5rem;
+}
+.project-card .project-image img{
+    border: 2px solid white;
+}
+.project-card .project-image img:not(:first-child){
+    margin-left: -11px;
+}
+.project-card .project-featuers{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: .6rem 0;
+    margin-bottom: 1rem;
+    border-top: 1px solid var(--second-bg);
+    border-bottom: 1px solid var(--second-bg);
+}
+.project-card .project-featuers p{
+    padding: 3px 5px;
+    font-size: .65rem;
+    background-color: var(--second-bg);
+    border-radius: 5px;
+}
+.project-card .progr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-card .progr p{
+    color: gray;
+    font-size: .75rem;
+}
+.project-card .progr .pr1::before{
+    width: 55%;
+    background-color: var(--darkRed);
+}
+.project-card .progr .pr2::before{
+    width: 80%;
+    background-color: var(--darkGreen);
+}
+.project-card .progr .pr3::before{
+    width: 100%;
+    background-color: var(--darkBlue);
+}
+.project-card .progr .pr4::before{
+    width: 60%;
+    background-color: var(--darkGreen);
+}
+.project-card .progr .pr5::before{
+    width: 70%;
+    background-color: var(--darkGreen);
+}
+.project-card .progr .pr6::before{
+    width: 35%;
+    background-color: var(--darkRed);
+}
+.project-card .progr .pr7::before{
+    width: 65%;
+    background-color: var(--darkGreen);
+}
+.project-card .progr .pr8::before{
+    width: 60%;
+    background-color: var(--darkGreen);
+}
+.project-card .progr .pr9::before{
+    width: 90%;
+    background-color: var(--darkGreen);
+}
+
+/* --- End Projects page --- */

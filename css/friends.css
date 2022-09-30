@@ -1,0 +1,68 @@
+/* --- Start friends page --- */
+
+.dashboard .container{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-rows: auto;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.friend-card{
+    position: relative;
+}
+.friend-card .contact{
+    position: absolute;
+    width: 100px;
+    top: .5rem;
+    left: .5rem;
+}
+.friend-card .contact i{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--second-bg);
+    color: #646464;
+    cursor: pointer;
+}
+.friend-card .character{
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.friend-card .character h4{
+    margin: .5rem 0 .3rem;
+}
+.friend-card .character h4 + p{
+    color: gray;
+    font-size: .8rem;
+    font-weight: 300;
+}
+.friend-card .char-img{
+    width: 70px;
+}
+.friend-card ul{
+    border-top: 1px solid var(--second-bg);
+    border-bottom: 1px solid var(--second-bg);
+    padding: 1rem 0;
+    line-height: 1.7;
+    font-weight: 300;
+    font-size: .9rem;
+}
+.friend-card ul i{
+    text-align: center;
+    width: 20px;
+}
+.friend-card .join{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding-top: .7rem;
+}
+.friend-card .join p{
+    color: gray;
+    font-size: .6rem;
+}
+.friend-card .join div button{
+    font-size: .6rem;
+    
+}
+
+/* --- End friends page --- */

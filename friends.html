@@ -1,0 +1,356 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Elzero | Alaa Eldeyn</title>
+    <!--Render all Elements normally-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Main style file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--My framework file-->
+    <link rel="stylesheet" href="css/framework.css">
+    <!--Friends style file-->
+    <link rel="stylesheet" href="css/friends.css">
+</head>
+<body>
+    <header class="main-padding f-centering">
+        <div class="container">
+            <div class="search-box border-r f-centering">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="search" placeholder="Search">
+            </div>
+            <div class="profile ">
+                <i class="fa-regular fa-bell"></i>
+                <div class="avatar-img">
+                    <img class="img-control" src="imgs/avatar.png" alt="avatar">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <div class="logo">Alaa Eldeyn</div>
+            <div class="pages">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-regular fa-chart-bar"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="project.html">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li class="hov-active">
+                        <a href="friends.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="files.html">
+                            <i class="fa-regular fa-file"></i>
+                            <span>Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="plans.html">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projectsTable.html">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Projects Table</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="dashboard">
+            <h1>Friends</h1>
+            <div class="container">
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-01.jpg" alt="friend">
+                        </div>
+                        <h4>Alaa Eldeyn</h4>
+                        <p>JavaScript developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 99 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 15 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 25 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 02/10/2021</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-02.jpg" alt="friend">
+                        </div>
+                        <h4>Omar Fathy</h4>
+                        <p>Cloud developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 30 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 11 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 12 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 02/08/2020</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-03.jpg" alt="friend">
+                        </div>
+                        <h4>Mohamed Ahmed</h4>
+                        <p>Mobile developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 80 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 20 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 18 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 02/06/2020</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-04.jpg" alt="friend">
+                        </div>
+                        <h4>Shady Nabil</h4>
+                        <p>Back-End developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 70 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 30 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 18 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 28/06/2020</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-05.jpg" alt="friend">
+                        </div>
+                        <h4>Mohamed Ibrahim</h4>
+                        <p>Algorithm developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 80 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 30 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 18 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 28/08/2020</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-04.jpg" alt="friend">
+                        </div>
+                        <h4>Mohamed Adel</h4>
+                        <p>Cloud developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 30 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 11 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 12 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 02/08/2020</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-02.jpg" alt="friend">
+                        </div>
+                        <h4>Ahmed Abuzaid</h4>
+                        <p>Content Creator</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 80 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 30 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 18 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 28/08/2020</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-05.jpg" alt="friend">
+                        </div>
+                        <h4>Alaa Eldeyn</h4>
+                        <p>JavaScript developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 99 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 15 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 25 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 02/10/2021</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-01.jpg" alt="friend">
+                        </div>
+                        <h4>Gareeb Elshiekh</h4>
+                        <p>Back-End developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 90 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 15 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 25 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 02/10/2020</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-card bg-white border-r main-padding">
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="character f-centering">
+                        <div class="char-img">
+                            <img class="fit-img circle" src="imgs/friend-03.jpg" alt="friend">
+                        </div>
+                        <h4>Hamza Mahmoud</h4>
+                        <p>Front-End developer</p>
+                    </div>
+                    <ul>
+                        <li><i class="fa-regular fa-face-smile"></i>&nbsp; 80 Friends</li>
+                        <li><i class="fa-solid fa-layer-group"></i>&nbsp; 20 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>&nbsp; 18 Articles</li>
+                    </ul>
+                    <div class="join">
+                        <p>joined 02/06/2020</p>
+                        <div>
+                            <button class="btn bg-blue">Profile</button>
+                            <button class="btn bg-red">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

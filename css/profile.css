@@ -1,0 +1,140 @@
+.dashboard .container{
+    margin-bottom: 15px;
+}
+/* Start profile box */
+.profile-one{
+    grid-column: 1 / 4;
+    display: flex;
+}
+.fa-star{
+    color: #fe9e12;
+    font-size: .7rem;
+}
+.profile-one .prof-card{
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+    padding-right: 10px;
+    border-right: 1px solid var(--second-bg);
+}
+.profile-one .prof-card .prof-img{
+    width: 100px;
+}
+.prof-card .prof-img, .prof-card h3, .prof-card .level, .prof-card .progress, .prof-card .stars{
+    margin-bottom: .6rem;
+}
+.prof-card .level, .prof-card .rate{
+    color: gray;
+    font-size: .9rem;
+}
+.prof-card .progress{
+    margin-top: 5px;
+    width: 70%;
+}
+.prof-card .progress::before{
+    width: 70%;
+    background-color: var(--darkBlue);
+}
+.prof-card .rate{
+    font-size: .7rem;
+}
+.prof-details {
+    width: 100%;
+}
+.prof-details .prof-line{
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+.prof-details .row{
+    position: relative;
+    padding: 0 10px;
+}
+.prof-details .row:first-child{
+    padding-top: 5px;
+}
+.prof-details .row:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-bg);
+    bottom: -1.4rem;
+}
+.prof-details p{
+    color: gray;
+    font-size: .85rem;
+    flex: 1;
+    margin-top: .3rem;
+}
+.prof-details .prof-line span{
+    color: #111;
+}
+@media (max-width: 900px){
+    .prof-details .prof-line{
+        margin-bottom: 1rem;
+    }
+    .prof-details .row:not(:last-child)::after{
+        bottom: -.75rem;
+    }
+}
+/* End profile box */
+/* Start Skills box */
+.skill-row{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.skill-row:last-child{
+    margin-bottom: 0;
+}
+.skill-row:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .5px;
+    background-color: var(--second-bg);
+    bottom: -.75rem;
+}
+.skill-row .sk{
+    font-size: .8rem;
+    background-color: var(--second-bg);
+}
+/* End Skills box */
+/* Start activity box */
+.activity{
+    grid-column: 2 / 4;
+}
+.activity .act-img{
+    width: 40px;
+}
+.activity .act-row{
+    display: flex;
+    gap: 10px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.activity .act-row:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--second-bg);
+    bottom: -1rem;
+}
+.activity .act-info{
+    flex: 1;
+    padding-right: 10px;
+}
+.activity .a1, .activity .a2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .3rem;
+    font-size: .9rem;
+}
+.activity .act-info .p14{
+    color: gray;
+    font-size: .8rem;
+}
+/* End activity box */

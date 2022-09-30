@@ -1,0 +1,171 @@
+/* --- Start Settings Page --- */
+
+/* Start control box */
+.control .p-second{
+    margin: .2rem 0 1rem;
+}
+.control .ctrl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.control #ctrl-msg{
+    resize: none;
+    width: 100%;
+    height: 175px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--second-bg);
+}
+.control #ctrl-msg:focus{
+    outline: 1px solid var(--darkBlue);
+}
+/* End control box */
+/* Start General info box */
+.gen-info form{
+    display: flex;
+    flex-direction: column;
+    color: gray;
+}
+.gen-info form label{
+    font-size: .8rem;
+    margin-bottom: .2rem;
+}
+.gen-info form label:not(:first-child){
+    margin-top: .8rem;
+}
+.gen-info form input{
+    font-size: .85rem;
+    font-weight: 300;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.gen-info form input:focus{
+    outline: 1px solid var(--darkBlue);
+}
+.gen-info form .email{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.gen-info form .email input{
+    flex: 1;
+    background-color: rgba(217, 233, 255, 0.359);
+}
+.gen-info form .email a{
+    color: var(--darkBlue);
+}
+/* End General info box */
+/* Start Security info box */
+.sec-info .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.sec-info .item:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -1rem;
+    background-color: var(--second-bg);
+}
+.sec-info .item p:first-child{
+    font-size: .9rem;
+}
+.sec-info .item .p-second{
+    font-size: .7rem;
+    margin: .2rem 0;
+}
+/* End Security info box */
+/* Start Social info box */
+.social-box .social-item{
+    border: 1.5px solid #e3e3e3;
+    border-radius: 5px;
+    margin-bottom: .7rem;
+    color: gray;
+    background-color: var(--hover-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-box .social-item i{
+    width: 35px;
+    text-align: center;
+}
+.social-box .social-item input{
+    height: 35px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-left: 2px solid #e3e3e3;
+    font-size: .8rem;
+    padding-left: 5px;
+    flex: 1;
+}
+/* End Social info box */
+/* Start widgets control box */
+.widgets-box form input{
+    margin-left: 3px;
+    cursor: pointer;
+}
+.widgets-box form label{
+    cursor: pointer;
+    padding-left: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* End widgets control box */
+/* Start Backup box */
+.backup-box form input{
+    cursor: pointer;
+}
+.backup-box form label{
+    cursor: pointer;
+}
+.backup-box .plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin-top: 2rem;
+    position: relative;
+}
+.backup-box .plan::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+    top: -1rem;
+}
+.backup-box .plan input{
+    display: none;
+}
+.backup-box .plan i{
+    margin-bottom: .3rem;
+    font-size: .8rem;
+}
+.backup-box .plan label{
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    flex-grow: 1;
+    width: 100px;
+    height: 65px;
+    transition: var(--main-tr);
+    cursor: pointer;
+}
+.backup-box .plan input[type=radio]:checked + label{
+    border: 2px solid var(--darkBlue);
+    color: var(--darkBlue);
+}
+/* End Backup box */
+.dashboard .container {
+    margin-bottom: 1rem;
+}
+
+/* --- End Settings Page --- */

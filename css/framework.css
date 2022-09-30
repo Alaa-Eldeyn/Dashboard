@@ -1,0 +1,99 @@
+.f-centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-blue{
+    background-color: var(--darkBlue);
+    color: white;
+}
+.bg-orange{
+    background-color: var(--darkOrange);
+    color: white;
+}
+.bg-green{
+    background-color: var(--darkGreen);
+    color: white;
+}
+.bg-red{
+    background-color: var(--darkRed);
+    color: white;
+}
+.border-r{
+    border-radius: 10px;
+}
+.circle{
+    border-radius: 50%;
+}
+.img-control{
+    width: 100%;
+}
+.main-padding{
+    padding: 15px;
+}
+.second-padding{
+    padding: 5px;
+}
+.bg-white{
+    background-color: white;
+}
+.fit-img{
+    width: 100%;
+}
+.btn{
+    padding: 3px 5px;
+    font-size: .8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.p-second{
+    font-size: .8rem;
+    color: gray;
+}
+.myToggle{
+    cursor: pointer;
+}
+.myToggle .toggle-field{
+    display: none;
+}
+.activation{
+    width: 40px;
+    height: 20px;
+    background-color: var(--second-bg);
+    border-radius: 20px;
+    color: white;
+    transition: var(--main-tr);
+    position: relative;
+}
+.myToggle .activation::after{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    left: 2.5px;
+    top: 2.5px;
+    border-radius: 20px;
+    transition: var(--main-tr);
+}
+.myToggle .toggle-field:checked ~ .activation{
+    background-color: var(--darkBlue);
+}
+.myToggle .toggle-field:checked ~ .activation::after{
+    transform: translateX(20px);
+}
+.progress{
+    width: 50%;
+    height: 6px;
+    background-color: var(--second-bg);
+    border-radius: 6px;
+    position: relative;
+}
+.progress::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-radius: 6px;
+}

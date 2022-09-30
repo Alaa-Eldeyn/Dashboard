@@ -1,0 +1,6 @@
+.table-box {
+    margin-right: 10px;
+}
+.table-box #projects{
+    display: table !important
+}
