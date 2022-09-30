@@ -50,6 +50,11 @@
 .flex-container{
     display: flex;
 }
+@media (max-width: 767px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
 .flex-container .container{
     flex: 1;
 }
@@ -59,6 +64,12 @@
     margin-right: 10px;
     text-align: center;
     padding: 10px;
+}
+@media (max-width: 767px){
+    .flex-container .sideinfo{
+        width: 97%;
+        margin-bottom: 10px;
+    }
 }
 .sideinfo h4{
     text-align: left;
