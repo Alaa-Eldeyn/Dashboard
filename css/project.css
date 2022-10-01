@@ -1,6 +1,7 @@
 /* --- Start Projects page --- */
 
 .dashboard .container{
+    display: grid;
     grid-template-rows: repeat(auto-fit, 200px);
 }
 .project-card{
