@@ -69,6 +69,7 @@
     .flex-container .sideinfo{
         width: 97%;
         margin-bottom: 10px;
+        order: -1;
     }
 }
 .sideinfo h4{
