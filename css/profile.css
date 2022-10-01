@@ -1,9 +1,11 @@
 .dashboard .container{
     margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /* Start profile box */
 .profile-one{
-    grid-column: 1 / 4;
+    width: 100%;
     display: flex;
 }
 .fa-star{
@@ -43,14 +45,13 @@
 }
 .prof-details .prof-line{
     display: flex;
-    margin-bottom: 2.5rem;
+}
+.prof-details .row:not(:last-child){
+    margin-bottom: 1.5rem;
 }
 .prof-details .row{
     position: relative;
     padding: 0 10px;
-}
-.prof-details .row:first-child{
-    padding-top: 5px;
 }
 .prof-details .row:not(:last-child)::after{
     content: '';
@@ -58,16 +59,19 @@
     width: 100%;
     height: 1px;
     background-color: var(--second-bg);
-    bottom: -1.4rem;
+    bottom: -.8rem;
 }
 .prof-details p{
     color: gray;
-    font-size: .85rem;
+    font-size: .75rem;
     flex: 1;
     margin-top: .3rem;
 }
 .prof-details .prof-line span{
     color: #111;
+}
+.prof-details .myToggle{
+    margin-top: 5px;
 }
 @media (max-width: 900px){
     .prof-details .prof-line{
@@ -77,8 +81,42 @@
         bottom: -.75rem;
     }
 }
+@media (max-width: 768px){
+    .profile-one{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-one .prof-card{
+        border-right: none;
+    }
+    .prof-details .prof-line{
+        margin-top: .5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 40px;
+        column-gap: 10px; 
+        row-gap: 5px;
+    }
+}
+@media (max-width: 480px){
+    .prof-details .row .title{
+        font-size: .75rem;
+    }
+    .prof-details .prof-line{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+}
 /* End profile box */
 /* Start Skills box */
+.mySkills{
+    width: 330px;
+}
+@media (max-width: 1000px){
+    .mySkills{
+        width: 100%;
+    }
+}
 .skill-row{
     display: flex;
     gap: 5px;
@@ -103,7 +141,7 @@
 /* End Skills box */
 /* Start activity box */
 .activity{
-    grid-column: 2 / 4;
+    flex-grow: 1;
 }
 .activity .act-img{
     width: 40px;
